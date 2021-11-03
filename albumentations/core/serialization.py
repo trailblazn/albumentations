@@ -36,7 +36,7 @@ def get_shortest_class_fullname(cls):
     return shorten_class_name(class_fullname)
 
 
-class SerializableMeta(type):
+class SerializableMeta(abc.ABCMeta):
     """
     A metaclass that is used to register classes in `SERIALIZABLE_REGISTRY` or `NON_SERIALIZABLE_REGISTRY`
     so they can be found later while deserializing transformation pipeline using classes full names.
