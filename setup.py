@@ -48,8 +48,8 @@ def choose_requirement(mains, secondary):
 
 
 def get_install_requirements(install_requires, choose_install_requires):
-    for mains, secondary in choose_install_requires:
-        install_requires.append(choose_requirement(mains, secondary))
+    # for mains, secondary in choose_install_requires:
+    #     install_requires.append(choose_requirement(mains, secondary))
 
     return install_requires
 
